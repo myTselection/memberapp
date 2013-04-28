@@ -1,0 +1,78 @@
+
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial;
+    font-size:1em;
+    color:white;
+    background-color:white;
+}
+h2{
+    color:#e31937;
+}
+label{
+    color:#e31937;
+}
+.ui-content{
+    background: transparent;
+    color:white;
+    text-shadow:none;
+    padding-top:30px !important;
+}
+
+/* Background settings */
+.ui-page {
+    background-image: url('../img/cgi_dots.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-color:white;
+}
+/* Prevent text selection while swiping with mouse */
+.ui-page .ui-header, .ui-title, .control .ui-btn, .trivia-btn, .ui-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+li.news_part{
+    background: rgba(123,123,123,0.1);
+}
+
+a.news_item{
+    color: #000 !important;
+    text-shadow: none !important;
+}
+
+/* Active class used as the "on" state across all themes
+-----------------------------------------------------------------------------------------------------------*/
+.ui-btn-active {
+    border: 1px solid #c1272d /*{global-active-border}*/;
+    background: #c1272d /*{global-active-background-color}*/;
+    font-weight: bold;
+    color: #ffffff /*{global-active-color}*/;
+    cursor: pointer;
+    text-shadow: 0 /*{global-active-shadow-x}*/ 1px /*{global-active-shadow-y}*/ 0 /*{global-active-shadow-radius}*/ #444444 /*{global-active-shadow-color}*/;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #d42a31 /*{global-active-background-start}*/), to( #ad2328 /*{global-active-background-end}*/)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient( #d42a31 /*{global-active-background-start}*/, #ad2328 /*{global-active-background-end}*/); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient( #d42a31 /*{global-active-background-start}*/, #ad2328 /*{global-active-background-end}*/); /* FF3.6 */
+    background-image:     -ms-linear-gradient( #d42a31 /*{global-active-background-start}*/, #ad2328 /*{global-active-background-end}*/); /* IE10 */
+    background-image:      -o-linear-gradient( #d42a31 /*{global-active-background-start}*/, #ad2328 /*{global-active-background-end}*/); /* Opera 11.10+ */
+    background-image:         linear-gradient( #d42a31 /*{global-active-background-start}*/, #ad2328 /*{global-active-background-end}*/);
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+}
+.ui-checkbox-on .ui-icon,
+.ui-radio-on .ui-icon {
+    background-color: #c1272d /*{global-active-background-color}*/; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+}
+.ui-focus,
+.ui-btn:focus {
+    -moz-box-shadow: inset 0 0 3px #c1272d /*{global-active-background-color}*/, 0 0 9px #c1272d /*{global-active-background-color}*/;
+    -webkit-box-shadow: inset 0 0 3px #c1272d /*{global-active-background-color}*/, 0 0 9px #c1272d /*{global-active-background-color}*/;
+    box-shadow: inset 0 0 3px #c1272d /*{global-active-background-color}*/, 0 0 9px #c1272d /*{global-active-background-color}*/;
+}
+.ui-input-text.ui-focus,
+.ui-input-search.ui-focus {
+    -moz-box-shadow: 0 0 12px #c1272d /*{global-active-background-color}*/;
+    -webkit-box-shadow: 0 0 12px #c1272d /*{global-active-background-color}*/;
+    box-shadow: 0 0 12px #c1272d /*{global-active-background-color}*/;
+}

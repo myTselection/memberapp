@@ -1,0 +1,27 @@
+<div ng-controller="NewsController">
+    <div class="ui-content">
+        <button id="btnGet" name="btnGet" ng-click="getNews()">Get News</button>
+        <div style="padding:20px;">
+            <ul data-role="listview" data-inset="true">
+                <li ng-repeat="newsItem in news.items">
+                    <a href="#">{{newsItem.title}} / {{newsItem.col1}}</a>
+                </li>
+                <li class="news_part"><a class="news_item" href="#">
+                    <img src="img/news_icon.png" width="150px" height="150px">
+                    <h2>New Client</h2>
+                    <p>Toyota</p></a>
+                </li>
+                <li class="news_part"><a class="news_item" href="#">
+                    <img src="img/news_icon.png" width="150px" height="150px">
+                    <h2>Warning</h2>
+                    <p>Laptops are slow</p></a>
+                </li>
+                <li class="news_part"><a class="news_item" href="#">
+                    <img src="img/news_icon.png" width="150px" height="150px">
+                    <h2>Building</h2>
+                    <p>Diegem office flooded</p></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
